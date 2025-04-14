@@ -11,7 +11,7 @@ const Food = ({ food }) => {
                 onClick={() => setDetails(!details)}
                 className='btn bg-[#9538E2] text-white'>{details ? 'Hide' : 'Details'}</button>
             {
-                details && <p className='px-2'>{strCategoryDescription.slice(0, 250)}</p>
+                details && <p className='px-2'>{strCategoryDescription.slice(0, 230)}.....</p>
             }
         </div>
     );

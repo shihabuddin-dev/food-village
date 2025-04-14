@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import BuyDetails from '../buyDetails/BuyDetails';
 
 const BuyNow = ({ food }) => {
     const { strMeal, strMealThumb, strSource, strYoutube, strInstructions } = food
@@ -12,14 +12,8 @@ const BuyNow = ({ food }) => {
                     <small>{strInstructions.slice(0, 110)}.......</small>
                 </div>
                 <div className='flex justify-center items-center flex-wrap gap-2'>
-
-                    <NavLink to='buy-details'>
-                        <a
-                            target='blank'
-                            className='btn bg-[#9538E2] text-white'>Show Details
-                        </a>
-                    </NavLink>
-
+                    <BuyDetails food={food}>
+                    </BuyDetails>
                     <a href={strYoutube && strYoutube}
                         className='btn bg-[#9538E2] text-white'>{strYoutube ? 'Process' : 'Not Found'}</a>
                     <a href={strSource && strSource}
