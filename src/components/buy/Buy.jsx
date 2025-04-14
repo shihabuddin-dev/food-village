@@ -1,9 +1,16 @@
+import { CookingPot } from 'lucide-react';
 import React from 'react';
+import { useLoaderData } from 'react-router';
+import BuyNow from './buyNow/BuyNow';
 
 const Buy = () => {
+    const foodsPromise= useLoaderData()
+    const foods=foodsPromise.meals
     return (
-        <div>
-            <h4>buy</h4>
+        <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-6 px-2'>
+            {
+                foods.map(food=><BuyNow key={food.id} food={food}></BuyNow>)
+            }
         </div>
     );
 };

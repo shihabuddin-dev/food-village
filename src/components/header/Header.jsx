@@ -15,6 +15,7 @@ const Header = () => {
                         className="menu menu-sm dropdown-content bg-[#9538E2] rounded-box z-1 mt-3 w-52 px-4 shadow">
                         <NavLink to='/'>Home</NavLink>
                         <NavLink to='/foods'>Foods</NavLink>
+                        <NavLink to='/categories'>Categories</NavLink>
                         <NavLink to='/contact'>Contact</NavLink>
                     </ul>
                 </div>
@@ -24,11 +25,12 @@ const Header = () => {
                 <ul className="menu menu-horizontal px-4 space-x-4 text-xl font-semibold">
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='/foods'>Foods</NavLink>
+                    <NavLink to='/categories'>Categories</NavLink>
                     <NavLink to='/contact'>Contact</NavLink>
                 </ul>
             </div>
             <div className="navbar-end">
-                <NavLink to='/buy'> <a className="btn btn-sm md:btn btn-primary md:btn-primary md:text-sm">Buy Now</a></NavLink>
+                <NavLink to='/buy'> <a className="btn">Buy Now</a></NavLink>
             </div>
         </div>
     );

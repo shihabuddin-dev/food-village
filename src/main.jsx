@@ -12,6 +12,7 @@ import NotFound from './components/notFound/NotFound';
 import Buy from './components/buy/Buy';
 import Foods from './components/foods/Foods';
 import Contact from './components/contact/Contact';
+import Categories from './components/categories/Categories';
 
 const router = createBrowserRouter([
   {
@@ -19,15 +20,24 @@ const router = createBrowserRouter([
     Component: Root,
     children: [
       { index: true, Component: Home },
-      { path: 'buy', Component: Buy },
       {
         path: '/foods',
         loader: () => fetch('https://www.themealdb.com/api/json/v1/1/categories.php'),
         Component: Foods
       },
       {
+        path: 'categories',
+        loader: ()=> fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=c'),
+        Component: Categories
+      },
+      {
         path: 'contact',
         Component: Contact
+      },
+      {
+        path: '/buy',
+        loader: ()=> fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=c'),
+        Component: Buy
       },
     ]
   },
