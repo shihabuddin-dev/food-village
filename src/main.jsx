@@ -18,22 +18,22 @@ const router = createBrowserRouter([
     path: "/",
     Component: Root,
     children: [
-      {index: true, Component: Home },
-      {path: 'buy', Component: Buy},
+      { index: true, Component: Home },
+      { path: 'buy', Component: Buy },
       {
-        path: 'foods',
+        path: '/foods',
+        loader: () => fetch('https://www.themealdb.com/api/json/v1/1/categories.php'),
         Component: Foods
       },
       {
         path: 'contact',
         Component: Contact
-      }
-      
+      },
     ]
   },
   {
     path: '*',
-    Component: NotFound 
+    Component: NotFound
   }
 ]);
 createRoot(document.getElementById('root')).render(
