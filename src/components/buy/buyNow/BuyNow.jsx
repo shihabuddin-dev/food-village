@@ -5,7 +5,7 @@ const BuyNow = ({ food }) => {
     const { strMeal, strMealThumb, strSource, strYoutube, strInstructions } = food
     return (
         <div className='border-2 border-[#9538E2] rounded-xl p-2'>
-            <img className='w-52 md:w-78 mx-auto object-cover rounded-xl' src={strMealThumb} alt="" />
+            <img className='w-52 h-42 md:w-78 md:h-50 mx-auto object-cover rounded-xl' src={strMealThumb} alt="" />
             <div className='py-2 text-center space-y-2'>
                 <div>
                     <p className='text-lg font-semibold'>{strMeal}</p>

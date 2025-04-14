@@ -13,8 +13,8 @@ const Footer = () => {
                     <a href='https://x.com/?lang=en' target='blank'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
+                            width="22"
+                            height="22"
                             viewBox="0 0 24 24"
                             className="fill-current">
                             <path
@@ -24,8 +24,8 @@ const Footer = () => {
                     <a href='https://www.youtube.com/' target='blank'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
+                            width="22"
+                            height="22"
                             viewBox="0 0 24 24"
                             className="fill-current">
                             <path
@@ -35,8 +35,8 @@ const Footer = () => {
                     <a href='https://www.facebook.com/' target='blank'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
+                            width="22"
+                            height="22"
                             viewBox="0 0 24 24"
                             className="fill-current">
                             <path
