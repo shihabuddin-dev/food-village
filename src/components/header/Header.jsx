@@ -30,7 +30,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <NavLink to='/buy'> <a className="btn">Buy Now</a></NavLink>
+                <NavLink to='buy'> <a className="btn">Buy Now</a></NavLink>
             </div>
         </div>
     );

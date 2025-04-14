@@ -8,12 +8,12 @@ const BuyDetails = ({ food }) => {
             <dialog id="my_modal_1" className="modal">
                 <div className="modal-box">
                     <div className='border-2 border-[#9538E2] p-2 rounded-xl'>
-                        <img className='w-52 md:w-78 mx-auto object-cover rounded-xl' src={strMealThumb} alt="" />
+                        <img className='w-52 h-42 md:w-78 md:h-56 mx-auto object-cover rounded-xl' src={strMealThumb} alt="" />
                         <div className='py-2 space-y-2'>
                             <div className='text-justify space-y-1'>
-                                <p className='text-lg font-semibold'>Name: <span className='font-normal'>{strMeal}</span></p>
-                                <p className='text-lg font-semibold'>Category: <span className='font-normal'>{strCategory}</span></p>
-                                <p className='text-lg font-semibold'>Countries: <span className='font-normal'>{strArea}</span></p>
+                                <p className='md:text-lg font-semibold'>Name: <span className='font-normal'>{strMeal}</span></p>
+                                <p className='md:text-lg font-semibold'>Category: <span className='font-normal'>{strCategory}</span></p>
+                                <p className='md:text-lg font-semibold'>Countries: <span className='font-normal'>{strArea}</span></p>
                                 <small> <span className='text-base font-semibold'>Description:</span> {strInstructions}</small>
                             </div>
                         </div>
