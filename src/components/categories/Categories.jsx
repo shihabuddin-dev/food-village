@@ -9,7 +9,7 @@ const Categories = () => {
     return (
         <div className='mt-6 px-2 mx-auto text-center space-y-4'>
             <p className='font-semibold text-xl md:text-2xl'>Total Categories {categories.length}</p>
-            <div className='flex flex-wrap gap-2 justify-center items-center'>
+            <div className='flex flex-wrap gap-1 md:gap-2 justify-center items-center'>
                 {
                     categories.map(category => <Category key={category.idCategory} category={category}></Category>)
                 }
